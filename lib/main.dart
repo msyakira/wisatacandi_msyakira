@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DetailScreen extends StatelesslWidget {
+class DetailScreen extends StatelessWidget {
   const DetailScreen({super.key});
 
   @override
