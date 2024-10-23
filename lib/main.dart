@@ -1,3 +1,5 @@
+import 'package:wisatacandi_msyakira/data/candi_data.dart';
+import 'package:wisatacandi_msyakira/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
