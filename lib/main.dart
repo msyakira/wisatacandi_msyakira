@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:wisatacandi/screens/profile_screen.dart';
 import 'data/candi_data.dart';
 import 'package:wisatacandi/models/candi.dart';
+=======
+import 'package:wisatacandi/data/candi_data.dart';
+>>>>>>> f2380cf68b45fc35feca82f2a40f110ac81d9c67
 import 'package:wisatacandi/screens/detail_screen.dart';
 
 void main() {
@@ -11,7 +15,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  //This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
