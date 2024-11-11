@@ -35,7 +35,8 @@ class DetailScreen extends StatelessWidget {
 
                 // tombol back kustom
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 32),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.deepPurple[100]?.withOpacity(0.8),
@@ -71,7 +72,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        onPressed: (){}, icon:
+                        onPressed: () {}, icon:
                       Icon(Icons.favorite_border),
                       )
                     ],
@@ -80,7 +81,7 @@ class DetailScreen extends StatelessWidget {
                   // info tengah (lokasi, dibangun, tipe)
                   SizedBox(height: 16,),
                   Row(children: [
-                    Icon(Icons.place,color: Colors.red,),
+                    Icon(Icons.place, color: Colors.red,),
                     SizedBox(width: 8,),
                     SizedBox(width: 70,
                       child: Text('lokasi', style: TextStyle(
@@ -88,7 +89,7 @@ class DetailScreen extends StatelessWidget {
                     Text(': ${candi.location}',),
                   ],),
                   Row(children: [
-                    Icon(Icons.calendar_month,color: Colors.blue,),
+                    Icon(Icons.calendar_month, color: Colors.blue,),
                     SizedBox(width: 8,),
                     SizedBox(width: 70,
                       child: Text('Dibangun', style: TextStyle(
@@ -96,7 +97,7 @@ class DetailScreen extends StatelessWidget {
                     Text(': ${candi.built}',),
                   ],),
                   Row(children: [
-                    Icon(Icons.house,color: Colors.green,),
+                    Icon(Icons.house, color: Colors.green,),
                     SizedBox(width: 8,),
                     SizedBox(width: 70,
                       child: Text('Tipe', style: TextStyle(
@@ -127,7 +128,7 @@ class DetailScreen extends StatelessWidget {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: candi.imageUrls.length,
-                      itemBuilder: (context,index){
+                      itemBuilder: (context, index) {
                         return Padding(
                           padding: EdgeInsets.only(left: 8),
                           child: GestureDetector(
@@ -143,16 +144,18 @@ class DetailScreen extends StatelessWidget {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: CachedNetworkImage(
-                                  imageUrl:candi.imageUrls[index],
+                                  imageUrl: candi.imageUrls[index],
                                   width: 120,
                                   height: 120,
                                   fit: BoxFit.cover,
-                                  placeholder: (context,url) => Container(
-                                    width: 120,
-                                    height: 120,
-                                    color: Colors.deepPurple[50],
-                                  ),
-                                  errorWidget: (context,url,error) => Icon(Icons.error),
+                                  placeholder: (context, url) =>
+                                      Container(
+                                        width: 120,
+                                        height: 120,
+                                        color: Colors.deepPurple[50],
+                                      ),
+                                  errorWidget: (context, url, error) =>
+                                      Icon(Icons.error),
 
                                 ),
                               ),
@@ -164,13 +167,14 @@ class DetailScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 4,),
                   Text('Tap untuk memperbesar', style: TextStyle(
-                    fontSize: 12,color: Colors.black54,
+                    fontSize: 12, color: Colors.black54,
                   ),),
                 ],
               ),
-
             ),
           ],
         ),
       ),
     );
+  }
+}
