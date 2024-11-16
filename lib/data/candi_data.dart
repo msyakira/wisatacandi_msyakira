@@ -1,9 +1,5 @@
 import 'package:wisatacandi/models/candi.dart';
-<<<<<<< HEAD
-
 import '../models/candi.dart';
-=======
->>>>>>> f2380cf68b45fc35feca82f2a40f110ac81d9c67
 
 var candiList = [
   Candi(
