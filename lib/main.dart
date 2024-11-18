@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(
             color: Colors.deepPurple,
             fontSize: 20,
-            fontWeight: FontW
+            fontWeight: FontWeight.bold,
           ),
         ),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
@@ -74,7 +74,7 @@ class _MainSreenState extends State<MainSreen> {
         data: Theme.of(context).copyWith(
           canvasColor: Colors.deepPurple[50],
         ),
-        child: BottomNavigationBar(),
+        child: BottomNavigationBar(items: items),
       ),
       )
     );
