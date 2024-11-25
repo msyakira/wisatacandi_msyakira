@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wisatacandi/screens/FavoriteScreen.dart';
 import 'package:wisatacandi/screens/Search_Screen.dart';
 import 'package:wisatacandi/screens/SignInScreen.dart';
+import 'package:wisatacandi/screens/SignUpScreen.dart';
 import 'package:wisatacandi/screens/home_screen.dart';
 import 'package:wisatacandi/screens/profile_screen.dart';
 import 'data/candi_data.dart';
@@ -21,6 +22,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wisata Candi',
       theme: ThemeData(
+        home: MainSreen(),
+        initialRoute: '/',
+        routes: {
+          '/homescreen': (context) => const HomeScreen(),
+          '/signin' : (context) => const SignInScreen(),
+          '/signup' : (context) => const SignUpScreen(),
+        }
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.deepPurple),
           titleTextStyle: TextStyle(
